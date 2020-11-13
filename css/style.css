@@ -1,0 +1,420 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #252525;
+}
+
+/*=================================================*/
+/*=====================MENU=======================*/
+
+.menu img {
+  height: 47px;
+  transition: 0.5s;
+}
+
+.menu img:hover {
+  transform: rotate(25deg);
+}
+
+.menu {
+  background: #252525;
+  padding: 25px 0;
+}
+
+.menu-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.menu-container::after, .menu-container::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.menu-logo {
+  display: block;
+  float: left;
+  margin-left: 10px;
+}
+
+.nav-menu {
+  float: right;
+}
+
+.nav-menu li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.nav-menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  transition: 0.6s ease;
+  letter-spacing: 0.5px;
+}
+
+.nav-menu a:hover {
+  color: #e3c4a8;
+}
+
+
+/*==============================================*/
+/*==================BANNER=====================*/
+
+.banner {
+  background: url(../img/bg-intro.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 205px 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.banner h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.banner h1::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #ffffff;
+  margin: 10px auto;
+}
+
+.banner p {
+  font-style: italic;
+  font-size: 18px;
+}
+
+
+/*===============================================*/
+/*================== SOBRE =====================*/
+
+#sobre {
+  padding: 60px 0;
+}
+
+#sobre h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 60px;
+}
+
+.sobre-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+  
+.sobre-container::after, .sobre-container::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.sobre-item {
+  width: 460px;
+  float: left;
+  margin: 0 10px;
+}
+
+.sobre-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.sobre-item h3 {
+  font-size: 36px;
+  background: #252525;
+  width: 220px;
+  color: #e3c4a8;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1em;
+  padding: 5px 0 10px 0;
+  top: -25px;
+  position: relative;
+  transition: 0.6s ease;
+}
+
+#sobre p {
+  font-size: 18px;
+  line-height: 1.4em;
+  font-style: italic;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 460px;
+}
+
+/*===============================================*/
+/*================= PRODUTOS ===================*/
+
+#produtos {
+  background: #e7e4d8;
+  border-top: 3px solid #d5d3c8;
+  border-bottom: 3px solid #d5d3c8;
+  padding: 60px 0;
+  height: 80vh;
+}
+
+.produtos-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.produtos-container::before, .produtos-container::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.produtos-item {
+  width: 300px;
+  float: left;
+  margin: 0 10px 20px 10px;
+}
+
+.produtos-item h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.produtos-item h2::before {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: currentColor;
+  border-radius: 50%;
+  margin: 40px auto;
+  border: 5px solid #e7e4d8;
+  box-shadow: 0 0 0 10px currentColor;
+}
+
+.produtos-carioca::before { color: #c17139;}
+.produtos-paulista::before { color: #492901;}
+.produtos-mineiro::before { color: #d7a54d;}
+
+.produtos-item p {
+  font-size: 16px;
+  line-height: 1.4em;
+  text-align: center;
+}
+
+.produtos-btn {
+  width: 180px;
+  border: 3px solid;
+  color: #252525;
+  text-decoration: none;
+  display: block ;
+  margin: 60px auto;
+  text-align: center;
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-size: 1.125em;
+  transition: 0.9s all;
+}
+
+.produtos-btn:hover {
+  background-color: #252525;
+  color: #e3c4a8;
+  border: 3px solid transparent;
+}
+
+/*===============================================*/
+/*================= PORTFÓLIO ==================*/
+
+#portfolio {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.locais-item {
+  clear: both;
+  margin: 60px auto;
+}
+
+.locais-item::after, .locais-item::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.locais-item img {
+  width: 460px;
+  float: left;
+  display: block;
+  margin: 0 10px;
+}
+
+.locais-item div {
+  width: 460px;
+  float: left;
+  margin: 0 10px;
+}
+
+.locais-item h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.locais-item h2::after{
+  content: '';
+  width: 50%;
+  height: 3px;
+  background: #e3c4a8;
+  left: 0;
+  bottom: -10px;
+  position: absolute;
+}
+
+.locais-item p {
+  font-size: 18px;
+  line-height: 1.4em;
+  margin-bottom: 40px;
+}
+
+.locais-item a {
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 3px solid #252525;
+  color: #252525;
+  padding: 10px;
+  font-weight: bold;
+  transition: 0.6s ease;
+}
+
+.locais-item a:hover {
+  background-color: #252525;
+  color: #e3c4a8;
+}
+
+/*========================================================*/
+/*=================== CONTATO / FOOTER ==================*/
+
+#contato {
+  background: #e7e4d8;
+  padding: 30px 0;
+}
+
+.contato-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.contato-container::after, .contato-container::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.contato-info {
+  width: 460px;
+  margin: 0 10px;
+  float: left;
+}
+
+.contato-info h2{
+  font-size: 2.25em;
+}
+
+.contato-info p {
+  font-size: 24px;
+  font-style: italic;
+}
+
+.formulario {
+  width: 460px;
+  margin: 0 10px;
+  float: left;
+}
+
+.formulario label {
+  display: none;
+}
+
+.formulario input {
+  box-sizing: border-box;
+  width: 320px;
+  border: 3px solid #252525;
+  background: none;
+  font-size: 1.5em;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 10px;
+  float: left;
+}
+
+.formulario button {
+  width: 139px;
+  background: #252525;
+  border: 3px solid transparent;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  padding: 10px;
+  color: #e7e4d8;
+  cursor: pointer;
+  margin-left: 1px;
+  font-weight: 900;
+  transition: 0.6s ease;
+}
+
+.formulario button:hover {
+  color: #252525;
+  border: 3px solid #252525;
+  background: transparent;
+}
+
+
+footer {
+  width: 100%;
+  background: #252525;
+}
+
+footer p {
+  padding: 10px 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.social { text-align: center;}
+
+.social a{
+  color: #ffffff;
+  text-align: center;
+  font-size: 35px;
+  padding: 15px;
+  transition: 0.6s;
+}
+
+.social a:hover {
+  color: #e3c4a8;
+}
+
+.topo {
+  padding: 0 25px 15px 0;
+  text-align: right;
+}
+
+.topo a{
+  color: #ffffff;
+  font-size: 20px;
+  transition: 0.6s ease-in;
+}
+
+
